@@ -1,5 +1,5 @@
-<% if !@room.errors.messages.empty? %>
-<%@room.errors.messages.each do |atr|%>
+<% if !@room.errors.full_messages.empty? %>
+<%@room.errors.full_messages.each do |atr|%>
   <%= atr %><br>
 <%end%>
 <%end%>
