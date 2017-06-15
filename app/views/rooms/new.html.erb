@@ -1,1 +1,6 @@
+<% if !@room.errors.messages.empty? %>
+<%@room.errors.messages.each do |atr|%>
+  <%= atr %><br>
+<%end%>
+<%end%>
 <%= render 'form' %>
